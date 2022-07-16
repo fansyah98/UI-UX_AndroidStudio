@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:id="@+id/L_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:onClick="back"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/L_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/L_img_1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Welcome back!"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/L_txt_1"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/gambar3"
+       android:id="@+id/L_txt_2"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/L_txt_2"
+        android:id="@+id/ly_1"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Enter Your Email"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/button_shape"
+            android:id="@+id/fulname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Enter Your password"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/button_shape"
+            android:id="@+id/alamat"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/re_button_login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:width="350dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="LOGIN MASUK"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_button_login1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="No have an account?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Registrasi"
+            android:onClick="regis"
+            android:id="@+id/txt_register"
+            android:textColor="@color/secondaryColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
